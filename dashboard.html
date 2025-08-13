@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    cursor: default;
+    margin-top: 0px;
+    background-color: orangered;
+    width: 100%;
+
+    h1{
+      color: white;
+    }
+
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  .links{
+    display: flex;
+    align-items: center;
+
+
+    input{
+      padding: 3px;
+      font-size: 15px;
+      outline: none;
+      border: 1px solid white;
+      border-radius: 3px;
+    }
+  }
+  .innerLinks{
+    padding: 5px;
+
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin: 0 40px;
+
+    }
+  }
+  .menu{
+    display: none;
+    cursor: pointer;
+    padding-right: 10px;
+    
+    span{
+      display: block;
+      margin: 5px;
+      background-color: white;
+      width: 45px;
+      height: 6px;
+      border-radius: 2px;
+    }
+  }
+  @media(max-width: 750px){
+    .menu{
+      display: block;
+    }
+    .navbar a{
+      display: none;
+    }
+    .innerLinks a{
+      display: none;
+    }
+    .links input{
+      margin-right: -10px;
+    }
+  }
+
+  .product{
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .innerProd{
+    background-color: orangered;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    max-width: 235px;
+    padding: 10px 5px;
+    cursor: default;
+    width: 100%;
+
+    img{
+      display: block;
+      margin-left: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    span{
+      font-size: 18px;
+      color: white;
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 5px;
+    cursor: pointer;
+
+    input{
+      background-color: white;
+      border: 1px solid orangered;
+      border-radius: 5px;
+      padding: 3px 10px;
+      font-size: 17px;
+      margin: 3px 5px;
+    }
+    input:hover{
+      background-color: orange;
+      color: white;
+      border: 1px solid orange;
+      cursor: pointer;
+    }
+    input:active{
+      scale: 1.03;
+      transition: 0.2s ease;
+    }
+  }
+  @media(max-width: 950px){
+    .innerLinks{
+      display: flex;
+
+      a{
+        font-size: 17px;
+        margin: 0 10px;
+      }
+    }
+    .navbar{
+
+      a{
+        font-size: 17px;
+      }
+    }
+  }
+  @media(max-width: 250px){
+    .product{
+      display: flex;
+      justify-content: center;
+    }
+  }
+</style>
+<body>
+    <nav class="navbar">
+      <h1>Online Shopping</h1>
+      <div class="links">
+        <input type="search" placeholder="Search...">
+        <ul class="innerLinks">
+          <a href="">Cart</a>
+          <a href="">Live</a>
+          <a href="">Notification</a>
+        </ul>
+      </div>
+      <a href="">Account</a>
+      <div class="menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  <div class="product">
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+    <form action="" class="innerProd">
+      <img src="iPhone_16_Pro_Max.webp" alt="" height="200">
+      <span>iPhone 16 Pro Max</span>
+      <div class="buttons">
+        <input type="submit" name="buyNow" value="Buy Now!">
+        <input type="submit" name="cart" id="" value="Add to Cart">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
